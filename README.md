@@ -12,7 +12,7 @@ development of Twitris' backend pipeline.
 
 #### Installing Dependencies
 
-*   Maven 2
+*   Maven
 *   Git
 *   MongoDB
 
@@ -27,7 +27,7 @@ To install these dependencies, simply execute the following using the command li
 	then create a new app, then generate the necessary keys).
 
 #### Run from Command Line
-s	
+	
 *	Install mongodb in your local machine.
 *	Open Terminal or Command prompt reach to the Project folder where your *pom.xml* file is kept.
 *	Type *mvn clean* to clean the project and *mvn install* to run the project
