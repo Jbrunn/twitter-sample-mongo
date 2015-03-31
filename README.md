@@ -8,7 +8,7 @@ A mongoDB collection called Tweets
 This set of instructions explains how to prepare your system for the local
 development of Twitris' backend pipeline.
 
-### Ubuntu 12.04 with Eclipse
+### Ubuntu 12.04
 
 #### Installing Dependencies
 
@@ -23,11 +23,11 @@ To install these dependencies, simply execute the following using the command li
 #### Enter your Twitter Credentials
 
 	The file Stream.java contains four private static final string variables corresponding to 
-	the twitter credentials made during app creation.
+	the twitter credentials made during app creation (you need to have a twitter account and 
+	then create a new app, then generate the necessary keys).
 
 #### Run from Command Line
-	This project is maven enable project and can be run by command prompt also.
-	
+s	
 *	Install mongodb in your local machine.
 *	Open Terminal or Command prompt reach to the Project folder where your *pom.xml* file is kept.
 *	Type *mvn clean* to clean the project and *mvn install* to run the project
