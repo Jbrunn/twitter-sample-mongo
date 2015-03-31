@@ -18,7 +18,7 @@ development of Twitris' backend pipeline.
 
 To install these dependencies, simply execute the following using the command line:
 
-	sudo apt-get install maven mongodb-server
+	sudo apt-get install git maven mongodb-server
 
 #### Enter your Twitter Credentials
 
