@@ -42,6 +42,9 @@ To install these dependencies, simply execute the following using the command li
 	                            or
 	You can type the *mvn clean install* to do both.
 
+	as long as that doesn't produce any errors, you should now have a jar. Now you can run it with 
+	java -jar target/twitter-sample-mongo-0.1-jar-with-dependencies.jar
+	
 ### Check the DB
 	
 #### To start the mongo shell
@@ -50,4 +53,5 @@ To install these dependencies, simply execute the following using the command li
 
 *	db.tweets.count() - how many tweets have been collected
 *	db.tweets.findOne() - display one tweet
+*	db.tweets.find().sort({$natural:-1}).limit(1) - display the most recent tweet
 *	db.tweets.find() - display all tweets 10 at a time. Show more by typing "it"
