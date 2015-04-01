@@ -44,7 +44,7 @@ To install these dependencies, simply execute the following using the command li
 
 ### Check the DB
 	
-## To start the mongo shell
+#### To start the mongo shell
 	
 	mongo localhost/twitter_sample
 
