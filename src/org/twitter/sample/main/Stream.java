@@ -8,6 +8,7 @@ package org.twitter.sample.main;
 
 import org.apache.commons.logging.Log;
 import org.twitter.sample.db.MongoDBHandler;
+import twitter4j.FilterQuery;
 import twitter4j.StallWarning;
 import twitter4j.Status;
 import twitter4j.StatusDeletionNotice;
@@ -20,7 +21,7 @@ import twitter4j.conf.ConfigurationBuilder;
 
 /**
  *
- * @author twitris
+ * @author jBrunn
  */
 public class Stream {
 
@@ -96,9 +97,11 @@ public class Stream {
         TwitterStreamFactory fact = new TwitterStreamFactory(twitterConfig.build());
         this.twitterStream = fact.getInstance();
         this.twitterStream.addListener(listener);
+        FilterQuery filterQuery = new FilterQuery();
+        filterQuery.language(new String[]{"en"});
+        this.twitterStream.filter(filterQuery);
         this.twitterStream.sample();
 
-		// System.out.println("Filter Query: " + filterQuery.toString());
     }
 
      public static void main(String[] args) throws TwitterException {
