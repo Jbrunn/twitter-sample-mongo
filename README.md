@@ -42,3 +42,12 @@ To install these dependencies, simply execute the following using the command li
 	                            or
 	You can type the *mvn clean install* to do both.
 
+### Check the DB
+	
+## To start the mongo shell
+	
+	mongo localhost/twitter_sample
+
+*	db.tweets.count() - how many tweets have been collected
+*	db.tweets.findOne() - display one tweet
+*	db.tweets.find() - display all tweets 10 at a time. Show more by typing "it"
