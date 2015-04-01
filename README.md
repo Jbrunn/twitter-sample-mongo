@@ -20,6 +20,14 @@ To install these dependencies, simply execute the following using the command li
 
 	sudo apt-get install git maven mongodb-server
 
+### Clone the Repository
+	
+	git clone https://github.com/Jbrunn/twitter-sample-mongo.git
+
+### Start Mongo
+
+	mongod & or nohup mongod &
+
 #### Enter your Twitter Credentials
 
 	The file Stream.java contains four private static final string variables corresponding to 
@@ -33,3 +41,4 @@ To install these dependencies, simply execute the following using the command li
 *	Type *mvn clean* to clean the project and *mvn install* to run the project
 	                            or
 	You can type the *mvn clean install* to do both.
+
